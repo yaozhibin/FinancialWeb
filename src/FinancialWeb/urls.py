@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-import web_stock
+from web_stock.views import test
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^stock/', include(web_stock.urls)),
+    url(r'^stock/test', test),
 ]
